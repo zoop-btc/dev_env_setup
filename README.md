@@ -77,6 +77,7 @@ These are the [color changes](https://github.com/romkatv/powerlevel10k#how-do-i-
   typeset -g POWERLEVEL9K_DIR_FOREGROUND=016
   typeset -g POWERLEVEL9K_DIR_SHORTENED_FOREGROUND=016
   typeset -g POWERLEVEL9K_DIR_ANCHOR_FOREGROUND=016
+  typeset -g POWERLEVEL9K_PROMPT_CHAR_{OK,ERROR}_VIINS_CONTENT_EXPANSION='|'
 ```
 to print color palette use `for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done`
 
